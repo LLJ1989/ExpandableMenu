@@ -1,0 +1,8 @@
+# Xcode
+build/
+xcuserdata/
+ExpandableMenu.xcworkspace/
+DerivedData/
+
+# Cocoapods
+Pods/

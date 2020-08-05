@@ -1,0 +1,15 @@
+
+# Excluded paths to ignore during linting
+excluded:
+  - Pods
+
+# line_length warning
+line_length:
+  - 250 # warning
+  - 400 # error
+
+# Disabling rules
+disabled_rules:
+  - unused_optional_binding
+  - force_cast
+  - multiple_closures_with_trailing_closure

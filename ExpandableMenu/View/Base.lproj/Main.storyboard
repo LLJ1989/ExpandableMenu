@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExpandableMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expandable Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8M-Ap-cRT">
+                                <rect key="frame" x="32" y="76" width="350" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="oul-OY-14y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-2A-5Em">
+                                <rect key="frame" x="0.0" y="156" width="414" height="740"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dj-Rr-oPx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Rta-I0-nok">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1164"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3a-zI-yGs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjE-cr-moo">
+                                                                <rect key="frame" x="183" y="20" width="48" height="48"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvj-4j-AyJ" customClass="CustomUIButton" customModule="ExpandableMenu" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="48" id="GGs-H8-aG7"/>
+                                                                            <constraint firstAttribute="width" constant="48" id="SGP-mR-fws"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="openMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6uj-Rf-5mA"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rN9-JR-GaU" customClass="CustomUIButton" customModule="ExpandableMenu" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="48" id="Muk-9V-104"/>
+                                                                            <constraint firstAttribute="height" constant="48" id="RzQ-qj-fqo"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="closeMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7M-Pe-a0a"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="tjE-cr-moo" firstAttribute="centerY" secondItem="B3a-zI-yGs" secondAttribute="centerY" id="4Va-a1-rGH"/>
+                                                            <constraint firstItem="tjE-cr-moo" firstAttribute="centerX" secondItem="B3a-zI-yGs" secondAttribute="centerX" id="IMo-Un-ziH"/>
+                                                            <constraint firstAttribute="height" constant="88" id="pKW-SD-ssc"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocN-tV-EeC">
+                                                        <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="Zm2-hW-1hg"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfs-kN-xCG">
+                                                        <rect key="frame" x="0.0" y="388" width="414" height="88"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfc-te-o6j">
+                                                                <rect key="frame" x="183" y="20" width="48" height="48"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyS-0v-YgC" customClass="CustomUIButton" customModule="ExpandableMenu" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="48" id="Tym-lc-WPH"/>
+                                                                            <constraint firstAttribute="height" constant="48" id="cnW-3z-swP"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="openMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IYM-o9-nbX"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dW-TW-WZL" customClass="CustomUIButton" customModule="ExpandableMenu" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="48" id="32E-k0-FPY"/>
+                                                                            <constraint firstAttribute="width" constant="48" id="ql6-aj-69p"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="closeMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Oo-DM-MVS"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="gfc-te-o6j" firstAttribute="centerX" secondItem="pfs-kN-xCG" secondAttribute="centerX" id="5Da-OQ-C4d"/>
+                                                            <constraint firstAttribute="height" constant="88" id="URq-Ib-QLp"/>
+                                                            <constraint firstItem="gfc-te-o6j" firstAttribute="centerY" secondItem="pfs-kN-xCG" secondAttribute="centerY" id="opC-4U-8EX"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwm-6n-vfF">
+                                                        <rect key="frame" x="0.0" y="476" width="414" height="300"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="5eG-Wl-N0k"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haa-D7-Qaa">
+                                                        <rect key="frame" x="0.0" y="776" width="414" height="88"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4D8-84-NYV">
+                                                                <rect key="frame" x="183" y="20" width="48" height="48"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2x-Qp-Hxb" customClass="CustomUIButton" customModule="ExpandableMenu" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="48" id="HdY-dE-vx2"/>
+                                                                            <constraint firstAttribute="height" constant="48" id="s7N-FO-0Ek"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="openMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Wg-Zh-tfY"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zb-dM-6uI" customClass="CustomUIButton" customModule="ExpandableMenu" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="48" id="Erk-gM-V4M"/>
+                                                                            <constraint firstAttribute="width" constant="48" id="PLz-E2-55f"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="closeMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEZ-J7-qeM"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="4D8-84-NYV" firstAttribute="centerX" secondItem="haa-D7-Qaa" secondAttribute="centerX" id="Lza-l2-84O"/>
+                                                            <constraint firstAttribute="height" constant="88" id="dQR-eo-Nn2"/>
+                                                            <constraint firstItem="4D8-84-NYV" firstAttribute="centerY" secondItem="haa-D7-Qaa" secondAttribute="centerY" id="u9M-IP-n7I"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXo-Iw-wnN">
+                                                        <rect key="frame" x="0.0" y="864" width="414" height="300"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="fFb-9C-b0I"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Rta-I0-nok" secondAttribute="trailing" id="4la-3l-m5g"/>
+                                            <constraint firstItem="Rta-I0-nok" firstAttribute="top" secondItem="8dj-Rr-oPx" secondAttribute="top" id="9bF-Gi-dbk"/>
+                                            <constraint firstItem="Rta-I0-nok" firstAttribute="leading" secondItem="8dj-Rr-oPx" secondAttribute="leading" id="KFd-uw-Qqi"/>
+                                            <constraint firstAttribute="height" constant="1200" id="wuM-ta-xV9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8dj-Rr-oPx" firstAttribute="leading" secondItem="NmO-2A-5Em" secondAttribute="leading" id="3or-QG-1D7"/>
+                                    <constraint firstAttribute="bottom" secondItem="8dj-Rr-oPx" secondAttribute="bottom" id="Hh6-Vr-Gm5"/>
+                                    <constraint firstItem="8dj-Rr-oPx" firstAttribute="top" secondItem="NmO-2A-5Em" secondAttribute="top" id="Ora-2P-z8c"/>
+                                    <constraint firstItem="8dj-Rr-oPx" firstAttribute="centerX" secondItem="NmO-2A-5Em" secondAttribute="centerX" id="P1b-Lq-uHG"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dj-Rr-oPx" secondAttribute="trailing" id="nbk-Tt-6cl"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NmO-2A-5Em" firstAttribute="top" secondItem="m8M-Ap-cRT" secondAttribute="bottom" constant="32" id="3hu-Ah-wv3"/>
+                            <constraint firstItem="m8M-Ap-cRT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tw-fK-vpC"/>
+                            <constraint firstAttribute="bottom" secondItem="NmO-2A-5Em" secondAttribute="bottom" id="Q7Q-o9-gWB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NmO-2A-5Em" secondAttribute="trailing" id="Tfb-du-B9r"/>
+                            <constraint firstItem="m8M-Ap-cRT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="fCv-3K-qso"/>
+                            <constraint firstItem="m8M-Ap-cRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="nec-Ll-kzU"/>
+                            <constraint firstItem="NmO-2A-5Em" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vZf-t1-cTS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeOne" destination="rN9-JR-GaU" id="jGa-sU-PFw"/>
+                        <outlet property="closeThree" destination="6zb-dM-6uI" id="Pdg-ez-eOe"/>
+                        <outlet property="closeTwo" destination="8dW-TW-WZL" id="ETf-Yh-Day"/>
+                        <outlet property="openOne" destination="tvj-4j-AyJ" id="Uek-3V-F6P"/>
+                        <outlet property="openThree" destination="J2x-Qp-Hxb" id="YS3-3W-uyp"/>
+                        <outlet property="openTwo" destination="FyS-0v-YgC" id="Quu-0M-aoI"/>
+                        <outlet property="viewOne" destination="ocN-tV-EeC" id="z1A-Ux-bcC"/>
+                        <outlet property="viewThree" destination="YXo-Iw-wnN" id="Gvb-TF-D3A"/>
+                        <outlet property="viewTwo" destination="Kwm-6n-vfF" id="DX9-OE-joq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="139"/>
+        </scene>
+    </scenes>
+</document>
